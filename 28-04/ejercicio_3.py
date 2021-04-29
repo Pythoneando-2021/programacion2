@@ -2,10 +2,9 @@
 Contar la cantidad de vocales.
 """
 
-vocales = "aeiou"
-oracion = input("Ingrese una oracion: ")
-def contarVocales(palabra):
-    final = [letra for letra in palabra if letra in vocales]
-    print("Cantidad de vocales: ", len(final))
 
-contarVocales(oracion)
+oracion = input("Ingrese una oracion: ")
+vocales = "aeiouAEIOU"
+contador = 0
+
+for i

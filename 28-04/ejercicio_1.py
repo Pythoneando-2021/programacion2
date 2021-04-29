@@ -2,14 +2,10 @@
 
 emailReceived = input("Ingrese su email: ")
 
-
-def validateEmail(email):
-    checkEmail = email.find("@")
-    if checkEmail < 0:
-        print("Por favor ingrese un email correcto")
+for i in emailReceived:
+    if i == "@":
+        caracter = "Email correcto"
+        break
     else:
-        print("Email correcto")
-
-
-validateEmail(emailReceived)
-
+        caracter = "Ingrese un email valido"
+print(caracter)
