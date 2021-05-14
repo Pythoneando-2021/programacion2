@@ -9,3 +9,5 @@ while valor != 0:
     valor = int(input("Para terminar oprima '0' \n Ingrese un valor entero: "))
     valoresEnteros.append(valor)
 print("La lista tiene un tamaño de " , len(valoresEnteros) - 1 ," elementos")
+
+print("Presione enter para salir")
