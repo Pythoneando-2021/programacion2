@@ -7,7 +7,7 @@ cantidad = int(input("Ingrese cantidad de productos: "))
 productos = []
 precios = []
 productosaux = []
-preciosaux =[]
+preciosaux = []
 contador = 0
 
 for x in range(cantidad):
@@ -16,17 +16,20 @@ for x in range(cantidad):
     precio = int(input("Ingrese el precio del producto:"))
     precios.append(precio)
 
-for k in precios:
-    if k > precios[0]:
-        productosaux.append(productos[contador])
-        preciosaux.append(precio[contador])
-        contador +=1
+for x in range(cantidad):
+    if precios[x] > precios[0]:
+        preciosaux.append(precios[x])
+        productosaux.append(productos[x])
     else:
-        contador += 1
         continue
 
-print("Los productos con mayor precio al primero ingresado son: ")
+print("Los productos con mayor precio al primero ingresado son:")
 
-for x in range(cantidad):
-    print(productosaux[x],preciosaux[x])
+str(preciosaux)
 
+for x in range(len(preciosaux)):
+    print(productosaux[x], " $", preciosaux[x])
+
+
+
+input("Presione enter para salir")
